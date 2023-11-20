@@ -2,6 +2,10 @@
 
 Welcome to Tenzies Game, a fun and interactive game built with React and the confetti library to celebrate when the user wins the game.
 
+# Demo 
+
+- [Tenzies game](https://mustapha-tenzies-game.netlify.app/)
+
 ## Table of Contents
 - [Description](#description)
 - [Features](#features)
