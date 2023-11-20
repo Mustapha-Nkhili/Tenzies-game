@@ -1,0 +1,77 @@
+main {
+  min-height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 15px;
+}
+.tenzies-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #f5f5f5;
+  width: 400px;
+  height: 400px;
+  border-radius: 6px;
+}
+
+.tenzies-container .title {
+  color: #2B283A;
+  text-align: center;
+}
+
+.tenzies-container .instructions {
+  font-family: inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-size: 13.11px;
+  text-align: center;
+  width: 270px;
+}
+
+.tenzies-container .dice-container {
+  display: grid;
+  grid-template: auto auto / repeat(5, 1fr);
+  width: 350px;
+  gap: 10px;
+  padding: 10px;
+}
+
+@media screen and (max-width: 600px) {
+  .tenzies-container {
+    width: 100%;
+  }
+  .tenzies-container .dice-container {
+    width: 100%;
+  }
+}
+
+.tenzies-container .dice {
+  display: block;
+  text-align: center;
+  line-height: 50px;
+  height: 50px;
+  width: 50px;
+  font-weight: 700;
+  font-size: 2rem;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.15);
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.tenzies-container .roll-dice-btn {
+  font-weight: 700;
+  font-size: 1.2rem;
+  width: 110px;
+  height: 50px;
+  background-color: #5035FF;
+  margin-top: 30px;
+  border-radius: 6px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: all 350ms ease-in-out;
+}
+
+.tenzies-container .roll-dice-btn:active {
+  transform: scale(0.8);
+}
